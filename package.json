@@ -1,5 +1,5 @@
 {
-  "name": "voting app",
+  "name": "votingapp",
   "version": "1.0.0",
   "description": "Voting App fcc project",
   "main": "server.js",
@@ -8,8 +8,7 @@
     "url": "https://github.com/Jamaurz/voting_app.git"
   },
   "engines": {
-    "node": "6.9.5",
-    "npm": "2.15.9"
+    "node": "6.9.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
