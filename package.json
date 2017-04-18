@@ -8,7 +8,8 @@
     "url": "https://github.com/Jamaurz/voting_app.git"
   },
   "engines": {
-    "node": "6.9.5"
+    "node": "6.9.5",
+    "npm": "2.15.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
