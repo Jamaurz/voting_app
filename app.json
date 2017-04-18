@@ -1,0 +1,6 @@
+{
+  "name": "Voting App",
+  "description": "Voting App fcc ptoject",
+  "repository": "https://github.com/Jamaurz/voting_app",
+  "keywords": ["MongoDB", "Mongoose", "full stack", "Express", "Node", "javascript", "AngularJs"] 
+}
