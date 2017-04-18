@@ -1,0 +1,17 @@
+// h2 poll
+.container#poll
+    h4 {{my.poll.polls.name}}
+    .vote
+        div
+            form
+                select(ng-model='my.selected', ng-options='item for item in my.poll.polls.options', placeholder='Choose an option...', ng-change='my.changeOpt()')
+                    option(value='' disabled) - Please Choose -
+                div(ng-show='my.customopt')
+                    label Vote with my  own option: 
+                        input(type='text' ng-model='my.customval')
+                input(type='submit' ng-click="my.voting()")
+            
+        div
+            canvas#doughnut.chart.chart-doughnut(chart-data='my.data', chart-labels='my.labels' chart-legend='true' chart-options='my.chartOptions')
+    input(type='button', ng-click="my.removePoll()", value='Delete Poll' ng-show="my.ownPoll")
+    input(type='button' ng-click='my.share()' value='Share on Twitter')

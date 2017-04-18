@@ -1,0 +1,8 @@
+.button {
+    background: white;
+    color: $color4;
+    &:hover {
+        background-color: $color4;
+        color: white;
+    }
+}

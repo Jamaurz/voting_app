@@ -1,0 +1,42 @@
+#poll {
+    display: flex;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    .vote {
+        display: flex;
+        justify-content: space-between;
+        div {
+            flex: 1;
+        }
+    }
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        div {
+            margin-top: 2em;
+        }
+        select {
+            line-height: 1.5em;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            @extend .button;
+            margin-top: 2em;
+        }
+    }
+    input[type="button"] {
+        @extend .button;
+        width: 100%;
+        border: 1px solid $color2;
+        margin: 2% 0;
+        border-radius: 5px;
+        line-height: 1.5em;
+    }
+}
+@media (max-width: 768px) {
+    #poll {
+        .vote {
+            flex-flow: column wrap;
+        }
+    }
+}

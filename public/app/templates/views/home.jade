@@ -1,0 +1,7 @@
+.container#home
+    div
+        h2 App Voting
+        h4 Select a poll to see the results and vote, or make a new poll!
+    div.block
+        p(ng-repeat='poll in my.polls') 
+            span(ng-click="my.mypollurl(poll._id)") {{poll.polls.name}}

@@ -1,0 +1,22 @@
+#createPoll {
+    text-align: center;
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        input, textarea {
+            border-radius: 5px;
+            line-height: 1.5em;
+            resize: none;
+            width: 100%;
+        }
+        input[type='submit'] {
+            @extend .button
+        }
+    }
+    label {
+        padding: 0.4em 0;
+        span {
+            display: flex;
+        }
+    }
+}

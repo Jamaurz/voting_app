@@ -1,0 +1,7 @@
+.container#myPoll
+    div
+        h2 My polls
+        p Below are polls you own.
+    .block
+        p(ng-repeat='poll in my.polls') 
+            span(ng-click="my.mypollurl(poll._id)") {{poll.polls.name}}

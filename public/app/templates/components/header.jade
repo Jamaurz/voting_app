@@ -1,0 +1,14 @@
+header#header
+    .content
+        div#logo
+            h1 Voting App            
+        div.nav
+            span
+                a(ng-click="main.pollFun('/')") Home
+                //a(href="/auth/twitter" ng-hide="main.auth") Sign in with Twitter
+                a(ng-click="main.pollFun('auth')" ng-hide="main.auth") Sign in with Twitter
+            span(ng-show="main.auth" ng-cloak)
+                a(ng-click="main.pollFun('/createpoll')") Create Poll
+                a(ng-click="main.pollFun('/mypolls')") My Polls
+                span#displayName {{main.auth.twitter.displayName}}
+                    a(href="/logout" ) Logout

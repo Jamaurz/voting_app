@@ -1,0 +1,14 @@
+.container#createPoll
+    h2 Create a new poll
+    //form(method='POST', action='/createpoll')
+    form(name='createpollform' novalidate)
+        label Title
+            span
+                input(type='text' name='namePoll' placeholder="title" ng-model="my.namePoll" required="")
+                i.error(ng-show='createpollform.namePoll.$error.required') *
+        label Options (seperated by line)
+            span
+                textarea(placeholder="options..." name="optionsPoll" ng-model="my.optionsPoll" required="")
+                i.error(ng-show='createpollform.optionsPoll.$error.required') *
+        input(type='submit' ng-click="my.createpollfun()")
+        p.error(ng-show='createpollform.$submitted && createpollform.$invalid') Name and Options are required

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: $color1;
+    font-family: 'Oswald', sans-serif;
+}
+a {
+    color: $color2;
+    font-family: 'Indie Flower', cursive;
+    &:hover {
+        text-decoration: none;
+        color: $color3;
+    }
+}
+h2 {
+    color: $color2;
+    font-family: 'Indie Flower', cursive;
+}
+
+.error {
+    color: red;   
+}
+.container {
+    min-height: 82vh;
+    max-width: 960px;
+    margin: auto;
+    padding: $padContainer;
+    box-sizing: border-box;
+}
+.block {
+    p {
+        border: 1px solid $color3;
+        border-radius: 5px;
+        padding: 0.4em;
+        box-shadow: 2px 5px 4px 2px $color2;
+        cursor: pointer;
+        &:hover { 
+            box-shadow: 2px 1px 4px 2px $color2;
+            color: $color2;
+        }  
+        span {
+            display: block;
+        }
+    }
+}
