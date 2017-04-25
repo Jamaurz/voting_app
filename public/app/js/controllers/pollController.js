@@ -34,6 +34,7 @@ app.controller('PollController', function($location, $routeParams , pollServices
 		pollServices.info(function(data) {
 			//console.log(data.twitter.id, vm.poll.polls.author, data.twitter.id == vm.poll.polls.author);
 			vm.ownPoll = undefined;
+			vm.authPoll = true;
 			if(data) {
 				if(data.twitter.id == vm.poll.polls.author) {
 					vm.ownPoll = data.twitter.id;

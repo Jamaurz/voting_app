@@ -36,7 +36,7 @@
 @media (max-width: 768px) {
     #poll {
         .vote {
-            flex-flow: column wrap;
+            display: block;
         }
     }
 }

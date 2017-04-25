@@ -14,4 +14,4 @@
         div
             canvas#doughnut.chart.chart-doughnut(chart-data='my.data', chart-labels='my.labels' chart-legend='true' chart-options='my.chartOptions')
     input(type='button', ng-click="my.removePoll()", value='Delete Poll' ng-show="my.ownPoll")
-    input(type='button' ng-click='my.share()' value='Share on Twitter')
+    input(type='button' ng-click='my.share()' value='Share on Twitter' ng-show="my.authPoll")
